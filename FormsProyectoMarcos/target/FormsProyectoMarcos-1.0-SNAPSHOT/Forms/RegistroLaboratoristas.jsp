@@ -1,5 +1,7 @@
 
+<%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="SQL.AuxInsertar"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +10,7 @@
         <jsp:include page="/WEB-INF/Extras/CSS.jsp"/> 
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Marcos cara de culo :3</h1>
         <br>
         <div class="container">
             <form action="${pageContext.request.contextPath}/AgregarLaboratorista" method="POST">
@@ -63,10 +65,11 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Examen a Realizar</label>
                     <select name="codigo_examen">
-                        <option value="lunes">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
+                        <%! AuxInsertar auxInsert = new AuxInsertar();%>
+                        <% ArrayList<Integer> codigosExamen = auxInsert.codigosExamen();%>
+                        <% for (Integer codigo : codigosExamen) {%>
+                        <option value="<%=codigo%>"><%=codigo%></option> 
+                        <%}%>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Agregar</button>

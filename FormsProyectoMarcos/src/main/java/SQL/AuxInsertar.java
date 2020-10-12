@@ -8,6 +8,7 @@ package SQL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 /**
  *
@@ -51,5 +52,21 @@ public class AuxInsertar {
             e.printStackTrace(System.out);
         }
         return "";
+    }
+    
+    public ArrayList<Integer> codigosExamen(){
+        String query = "SELECT codigo FROM Examen";
+        Connection connection = Conexion.Conexion();
+        ArrayList<Integer> listCodigos = new ArrayList<>();
+        
+        try (PreparedStatement preSt = connection.prepareStatement(query);
+                ResultSet resultado = preSt.executeQuery()) {
+            while (resultado.next()) {
+                listCodigos.add(resultado.getInt(1));
+            }
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
+        return listCodigos;
     }
 }
