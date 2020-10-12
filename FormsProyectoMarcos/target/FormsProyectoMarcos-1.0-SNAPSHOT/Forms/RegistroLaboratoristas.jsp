@@ -51,7 +51,13 @@
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Dias de Trabajo</label>
                     <div class="col-sm-10">
-                        <input type="time" class="form-control" name="hora_inicio" required step="3600">
+                        <label class="checkbox-inline"><input type="checkbox" value="1">Lunes</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="2">Martes</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="3">Miercoles</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="4">Jueves</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="5">Viernes</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="6">Sabado</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="7">Domingo</label>
                     </div>
                 </div>
                 <div class="form-group row">
