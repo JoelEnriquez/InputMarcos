@@ -11,7 +11,7 @@
         <h1>Form Registro Medicos</h1>
         <br>
         <div class="container">
-            <form>
+            <form action="${pageContext.request.contextPath}/AgregarMedico" method="POST">
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Nombre</label>
                     <div class="col-sm-10">

@@ -11,7 +11,7 @@
         <h1>Hello World!</h1>
         <br>
         <div class="container">
-            <form>
+            <form action="${pageContext.request.contextPath}/AgregarLaboratorista" method="POST">
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Nombre</label>
                     <div class="col-sm-10">
@@ -19,9 +19,9 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Numero de Colegiado</label>
+                    <label class="col-sm-2 col-form-label">Numero de Registro</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" name="colegiado" required>
+                        <input type="number" class="form-control" name="registro" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -49,16 +49,19 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Hora Inicio</label>
+                    <label class="col-sm-2 col-form-label">Dias de Trabajo</label>
                     <div class="col-sm-10">
                         <input type="time" class="form-control" name="hora_inicio" required step="3600">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Hora Fin</label>
-                    <div class="col-sm-10">
-                        <input type="time" class="form-control" name="hora_fin" required step="3600">
-                    </div>
+                    <label class="col-sm-2 col-form-label">Examen a Realizar</label>
+                    <select name="codigo_examen">
+                        <option value="lunes">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Agregar</button>
             </form>
