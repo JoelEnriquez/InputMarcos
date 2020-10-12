@@ -10,58 +10,59 @@
     <body>
         <h1>Form Registro Medicos</h1>
         <br>
-        <form>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Nombre</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="nombre" required>
+        <div class="container">
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Numero de Colegiado</label>
-                <div class="col-sm-10">
-                    <input type="number" class="form-control" name="colegiado" required>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Numero de Colegiado</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="colegiado" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">DPI</label>
-                <div class="col-sm-10">
-                    <input type="number"  min="1111111111111" max="9999999999999" class="form-control" name="DPI" required>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">DPI</label>
+                    <div class="col-sm-10">
+                        <input type="number"  min="1111111111111" max="9999999999999" class="form-control" name="DPI" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Numero de Telefono</label>
-                <div class="col-sm-10">
-                    <input type="number" class="form-control" name="telefono" required>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Numero de Telefono</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="telefono" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Correo Electronico</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" name="correo" required>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Correo Electronico</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" name="correo" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Fecha Inicio Trabajo</label>
-                <div class="col-sm-10">
-                    <input type="date" class="form-control" name="fecha_inicio" required>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Fecha Inicio Trabajo</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" name="fecha_inicio" required>
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Hora Inicio</label>
-                <div class="col-sm-10">
-                    <input type="time" class="form-control" name="hora_inicio" required step="3600">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Hora Inicio</label>
+                    <div class="col-sm-10">
+                        <input type="time" class="form-control" name="hora_inicio" required step="3600">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label class="col-sm-2 col-form-label">Hora Fin</label>
-                <div class="col-sm-10">
-                    <input type="time" class="form-control" name="hora_fin" required step="3600">
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Hora Fin</label>
+                    <div class="col-sm-10">
+                        <input type="time" class="form-control" name="hora_fin" required step="3600">
+                    </div>
                 </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Agregar</button>
-        </form>
-
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
 
         <jsp:include page="/WEB-INF/Extras/JS.jsp"/>
     </body>
