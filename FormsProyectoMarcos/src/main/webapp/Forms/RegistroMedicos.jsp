@@ -32,9 +32,34 @@
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Numero de Telefono</label>
                 <div class="col-sm-10">
-                    <input type="number" class="form-control" name="colegiado" required>
+                    <input type="number" class="form-control" name="telefono" required>
                 </div>
             </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Correo Electronico</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="correo" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Fecha Inicio Trabajo</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" name="fecha_inicio" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Hora Inicio</label>
+                <div class="col-sm-10">
+                    <input type="time" class="form-control" name="hora_inicio" required step="3600">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Hora Fin</label>
+                <div class="col-sm-10">
+                    <input type="time" class="form-control" name="hora_fin" required step="3600">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar</button>
         </form>
 
 
